@@ -1,13 +1,10 @@
 import { Box, 
   Flex, 
   Badge, 
-  Text, Button, 
-  Center, 
-  Spacer,  
+  Text, Button,  
   List,
   ListItem,
   ListIcon, } from '@chakra-ui/react';
-import Head from 'next/head';
 import Image from 'next/Image';
 import homeImg from '../public/homeImg.png';
 import pstore from '../public/pstore.png';
