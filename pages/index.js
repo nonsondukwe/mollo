@@ -5,7 +5,7 @@ import { Box,
   List,
   ListItem,
   ListIcon, } from '@chakra-ui/react';
-import Image from 'next/Image';
+import Image from 'next/image';
 import homeImg from '../public/homeImg.png';
 import pstore from '../public/pstore.png';
 import appstore from '../public/appstore.png';

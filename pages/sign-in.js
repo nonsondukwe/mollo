@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import {Flex, Box,Button, Text, InputRightElement, Input, InputGroup, chakra  } from '@chakra-ui/react';
-import Image from 'next/Image';
+import Image from 'next/image';
 import mlogo from '../public/mlogo.png';
 import hero from '../public/hero.svg';
 
