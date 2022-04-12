@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/Image';
+import Image from 'next/image';
 import mollo1 from '../public/mollo1.png';
 import socials from '../public/socials.png';
 import { Box, 
