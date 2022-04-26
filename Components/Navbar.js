@@ -50,7 +50,7 @@ const Navbar = () => {
       /></Link>
     </Center>
     <Spacer />
-    <Center display={{ base: 'none', md: 'none', lg: 'flex' }} pl='100'  pr='100'>
+    <Center display={{ base: 'none', md: 'none', lg: 'flex' }}  pl={{base: '5', md: '5', lg:'100' }}  pr={{base: '5', md: '5', lg:'100' }}>
     <Menu >
     <MenuButton border='0px' bgColor='transparent' as={Button} rightIcon={<IoMdArrowDropdown />}>
     Company
@@ -102,7 +102,7 @@ const Navbar = () => {
   </MenuList>
 </Menu>
     </Center>
-    <Center  pl='100' pr='100' display={{  base: 'none', md: 'none', lg: 'flex' }} >
+    <Center  pl={{base: '5', md: '5', lg:'100' }} pr={{base: '5', md: '5', lg:'100' }} display={{  base: 'none', md: 'none', lg: 'flex' }} >
     <Menu>
     <Link href='/sign-in' passHref>
   <Text mr='10' cursor='pointer' fontSize='16px' fontWeight='bold' lineHeight='24px' letterSpacing='0.01em' color='#3C1D59'> 

@@ -23,7 +23,12 @@ export default function Home() {
     <>
     <Navbar />
     <Box mt='100px'>
-      <Flex pr='100' pl='100' flexWrap alignContent='center' alignItems='center' flexDirection ={{ base: 'column', lg:'row', md:'column' }}>
+      <Flex pr={{base: '5', md: '5', lg:'100' }}
+      pl={{base: '5', md: '5', lg:'100' }}
+      flexWrap 
+      alignContent='center' 
+      alignItems='center' 
+      flexDirection ={{ base: 'column', lg:'row', md:'column' }}>
         <Box>
          <Badge bgColor='#F5EBFF' p='2' fontSize='12px' color='#3C1D59' borderRadius='20px' width='118px' textAlign='center'>DIGITAL BANK</Badge>
            <Text pb='20px' fontFamily='Roboto' fontStyle="normal" fontWeight='700' fontSize='36px' letterSpacing='0.01em' color='#3C1D59' lineHeight='50px'> All lifestyles can gain from digital banking. </Text>
@@ -65,7 +70,7 @@ export default function Home() {
      pb='180'
     >
     
-<Flex flexDirection ={{ base: 'column', lg:'row', md:'column' }} pr='100' pl='140' mt='30'  flexWrap alignContent='center' alignItems='center' >
+<Flex flexDirection ={{ base: 'column', lg:'row', md:'column' }} pr={{base: '5', md: '5', lg:'100' }} pl={{base: '5', md: '5', lg:'100' }} mt='30'  flexWrap alignContent='center' alignItems='center' >
   <Box>
   
   <Image 
@@ -74,7 +79,7 @@ export default function Home() {
         alt='Smiling Lade'
       />
 </Box>
-<Box ml='148' width='500px'  >
+<Box  ml={{base: '5', md: '5', lg:'148' }} width={{base: 'auto', md: 'auto', lg:'500px' }}  >
 <Badge  bgColor='#F5EBFF' p='2' fontSize='12px' color='#3C1D59' borderRadius='20px' width='118px' textAlign='center'>BILL PAYMENT</Badge>
 <Text  fontFamily='Roboto' fontStyle="normal" fontWeight='700' fontSize='36px' letterSpacing='0.01em' lineHeight='40px' color='#3C1D59' mb='20px' > Take advantage of seamless payments at a low or no cost. </Text>
 <Text  fontFamily='Abhaya Libre Medium' fontStyle="normal" fontWeight='500' fontSize='16px' letterSpacing='0.01em' color='#433D4A' lineHeight='24px' mb='32px'>
@@ -111,7 +116,7 @@ With only a few clicks on your smartphone, you can pay all of your bills and top
        pb='10'>
          
     
-<Flex flexDirection ={{ base: 'column', lg:'row', md:'column' }} pr='100' pl='100' mt='30' flexWrap alignContent='center' alignItems='center'>
+<Flex flexDirection ={{ base: 'column', lg:'row', md:'column' }} pr={{base: '5', md: '5', lg:'100' }}  pl={{base: '5', md: '5', lg:'100' }}  mt='30' flexWrap alignContent='center' alignItems='center'>
   <Box>
   
   <Badge  bgColor='#F5EBFF' p='2' fontSize='12px' color='#3C1D59' borderRadius='20px' width='118px' textAlign='center'>TRANSFER FUNDS</Badge>
@@ -136,7 +141,7 @@ Transfers to the Mollo account are free, and you can send money to any bank acco
  
 </List>
 </Box>
-<Box ml='148' width='500px'  >
+<Box   ml={{base: '5', md: '5', lg:'148' }} width={{base: 'auto', md: 'auto', lg:'500px' }}  >
 <Image 
         src={flash}
         width = '550'
@@ -152,7 +157,7 @@ Transfers to the Mollo account are free, and you can send money to any bank acco
        pb='10'>
          
     
-<Flex pr='100' pl='100' mt='30' flexWrap alignContent='center' alignItems='center' flexDirection ={{ base: 'column', lg:'row', md:'column' }}>
+<Flex pl={{base: '5', md: '5', lg:'100' }} pr={{base: '5', md: '5', lg:'100' }} mt='30' flexWrap alignContent='center' alignItems='center' flexDirection ={{ base: 'column', lg:'row', md:'column' }}>
   <Box>
   <Image 
         src={mollocard}
@@ -161,7 +166,7 @@ Transfers to the Mollo account are free, and you can send money to any bank acco
       />
   
 </Box>
-<Box ml='148' width='500px'  >
+<Box ml={{base: '5', md: '5', lg:'148' }} width={{base: 'auto', md: 'auto', lg:'500px' }} >
 <Badge  bgColor='#F5EBFF' p='2' fontSize='12px' color='#3C1D59' borderRadius='20px' width='118px' textAlign='center'>VIRTUAL CARDS</Badge>
 <Text  fontFamily='Roboto' fontStyle="normal" fontWeight='700' fontSize='36px' letterSpacing='0.01em' lineHeight='40px' color='#3C1D59' mb='20px'> Get an authentic card that pays you back. </Text>
 <Text  fontFamily='Abhaya Libre Medium' fontStyle="normal" fontWeight='500' fontSize='16px' letterSpacing='0.01em' color='#433D4A' lineHeight='24px' mb='32px'>
@@ -193,11 +198,11 @@ The Mollo debit card gives you more financial control, security, and access to d
 </section>
 <section>
   <Box  
-  mr='100' 
-  ml='100' 
+  mr={{base: '5', md: '5', lg:'100' }}
+  ml={{base: '5', md: '5', lg:'100' }}
   mt='30' 
-  pl='20' 
-  pr='20' 
+  pl={{base: '5', md: '5', lg:'20' }} 
+  pr={{base: '5', md: '5', lg:'20' }}
   bgColor='#3C1D59' 
   h={{ lg:'380px', md: '100%', base: '100%' }} 
   borderRadius='10' 

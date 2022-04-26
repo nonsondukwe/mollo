@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import {Flex, Box,Button, Text, InputRightElement, Input, InputGroup, chakra  } from '@chakra-ui/react';
+import {Flex, Box,Button, Text, InputRightElement, Input, InputGroup, chakra, IconButton   } from '@chakra-ui/react';
 import Image from 'next/image';
 import mlogo from '../public/mlogo.png';
 import hero from '../public/hero.svg';
+import {AiFillEyeInvisible, AiFillEye } from 'react-icons/ai';
 
 
 
@@ -20,7 +21,8 @@ const SignUp = () => {
       </Head>
     <nav>
     <Box>
-      <Flex pl='100' pt='10' pr='100'>
+      <Flex 
+      pl={{base: '5', md: '5', lg:'100' }} pt='10' pr={{base: '5', md: '5', lg:'100' }}>
       <Link href='/'>
         <Image 
         width= '147px'
@@ -38,8 +40,12 @@ const SignUp = () => {
      backgroundRepeat="no-repeat"
     >
     
-<Flex pr='100' pl='100' flexWrap alignContent='center' alignItems='center'>
-  <Box width='500px'>
+<Flex pr={{base: '5', md: '5', lg:'100' }} pl={{base: '5', md: '5', lg:'100' }} 
+flexDirection ={{ base: 'column', lg:'row', md:'column' }}
+flexWrap  
+alignContent='center' 
+alignItems='center'>
+  <Box width={{base: 'auto', md: 'auto', lg:'500px' }} >
 <Text pb='36px' fontFamily='Roboto' fontStyle="normal" fontWeight='700' fontSize='36px' letterSpacing='0.01em' color='#3C1D59'>Sign in to Mollo</Text>
 <Text  fontFamily='Abhaya Libre Medium' fontStyle="normal" fontWeight='500' fontSize='16px' letterSpacing='0.01em' color='#433D4A' lineHeight='24px'>
 Please enter your Mollo password and the email address associated with your account to sign in.
@@ -55,9 +61,9 @@ Please enter your Mollo password and the email address associated with your acco
         placeholder='Enter password'
       />
       <InputRightElement width='4.5rem'>
-        <Button h='1.75rem' size='sm' onClick={handleClick}>
-          {show ? 'Hide' : 'Show'}
-        </Button>
+        <IconButton onClick={handleClick} variant="ghost" >
+          {show ? <AiFillEye /> : <AiFillEyeInvisible />}
+        </IconButton>
       </InputRightElement>
     </InputGroup>
     <Text textAlign='right' fontStyle="normal" fontWeight='400' fontSize='14px'  color='#000000' mb='10'>Forgot password? <chakra.text color='#3C1D59' fontWeight='bold'>Resend it</chakra.text></Text>
